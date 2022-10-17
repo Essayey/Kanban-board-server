@@ -19,6 +19,7 @@ app.use('/api', router);
 app.use(errorHandler)
 
 const start = async () => {
+    console.log('CORS ORIGIN http://45.80.68.107:3000/')
     try {
         await sequelize.authenticate();
         await sequelize.sync();

@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5050
 const app = express();
 
 const server = require('http').createServer(app);
-const io = new require('socket.io')(server, { cors: { origin: 'http://localhost:3000' } });
+const io = new require('socket.io')(server, { cors: { origin: 'http://45.80.68.107:3000/' } });
 
 app.use(cors())
 app.use(express.json());
